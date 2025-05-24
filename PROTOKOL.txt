@@ -39,3 +39,29 @@ GET
   - status: ERROR
   - data: pesan kesalahan
 
+UPLOAD
+* TUJUAN: fungsi upload untuk menyimpan isi file ke dalam server
+* PARAMETER:
+  - PARAMETER1 : nama file
+  - PARAMETER2 : file yang akan disimpan (base64)
+* RESULT:
+- BERHASIL:
+  - status: OK
+  - data_namafile: nama file yang sudah disimpan di dalam server
+  - sum: jumlah file yang berada di dalam server sebelum dan sesudah upload file
+- GAGAL:
+  - status: ERROR
+  - data: pesan kesalahan
+
+DELETE
+* TUJUAN: untuk menghapus isi file di dalam server
+* PARAMETER:
+  - PARAMETER1 : nama file
+* RESULT:
+- BERHASIL:
+  - status: OK
+  - data_namafile: nama file yang sudah dihapus dari server
+  - sum: jumlah file yang berada di dalam server
+- GAGAL:
+  - status: ERROR
+  - data: pesan kesalahan
